@@ -1,3 +1,25 @@
 {
-  "extends": "@tsconfig/react-native/tsconfig.json"
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "compilerOptions":{
+    "baseUrl":".",
+    "paths": {
+      "@Screens/*":["./src/Screens/*"],
+      "@Controls/*":["./src/Controls/*"],
+      "@Static/*":["./src/Static/*"],
+      "@Layout/*":["./src/Layout/*"]
+    }
+},
+"include": [
+  "next-env.d.ts",
+  "additional.d.ts",
+  "declarations.d.ts",
+  "./src/**/*.ts",
+  "./src/**/*.js",
+  "./src/**/*.tsx",
+  "./App.tsx",
+  "./src/**/*",
+  "./src/**/*",
+  "./src/**/*.*"
+],
+"exclude": ["node_modules"]
 }
